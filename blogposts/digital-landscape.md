@@ -1,9 +1,9 @@
 ---
-image: '/images/motherboards.png'
-title: 'Exploring the Heart of Computers: Everything You Need to Know About Motherboards'
-date: '2024-04-18'
-category: 'Hardware'
-time: '5 min'
+image: '/images/digital-landscape.png'
+title: 'Navigating the Digital Landscape: The Evolution of Software Development'
+date: '2024-04-26'
+category: 'Software'
+time: '7 min'
 author: {
 	name: 'Vladyslav Karapetov',
 	job: 'Junior Front-end Developer',

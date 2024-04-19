@@ -1,9 +1,9 @@
 ---
-image: '/images/motherboards.png'
-title: 'Exploring the Heart of Computers: Everything You Need to Know About Motherboards'
-date: '2024-04-18'
-category: 'Hardware'
-time: '5 min'
+image: '/images/test-2.png'
+title: 'Lorem Ipsum sit Dolor Amet Lorem: Ipsum Savati at Roadir Kerne 2 Test'
+date: '2024-04-25'
+category: 'Test'
+time: '9 min'
 author: {
 	name: 'Vladyslav Karapetov',
 	job: 'Junior Front-end Developer',

@@ -18,8 +18,16 @@ export function getSortedPostsData(){
 		
 		const blogPost: BlogPost = {
 			id,
+			image: matterResult.data.image,
 			title: matterResult.data.title,
 			date: matterResult.data.date,
+			category: matterResult.data.category,
+			time: matterResult.data.time,
+			author: {
+				name: matterResult.data.author.name,
+				job: matterResult.data.author.job,
+				image: matterResult.data.author.image,
+			},
 		}
 
 		return blogPost;
@@ -43,8 +51,16 @@ export async function getPostData(id: string) {
 
 	const blogPostWithHTML: BlogPost & { contentHtml: string } = {
 		id,
+		image: matterResult.data.image,
 		title: matterResult.data.title,
 		date: matterResult.data.date,
+		category: matterResult.data.category,
+		time: matterResult.data.time,
+		author: {
+				name: matterResult.data.author.name,
+				job: matterResult.data.author.job,
+				image: matterResult.data.author.image,
+			},
 		contentHtml,
 	}
 

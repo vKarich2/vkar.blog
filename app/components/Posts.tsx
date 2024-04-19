@@ -5,8 +5,8 @@ import ListItem from './ListItem';
 export default function Posts() {
 	const posts = getSortedPostsData()
 	return (
-		<section className='mt-6 mx-auto max-w-2xl'>
-			<ul className='w-full'>
+		<section className=' mt-16'>
+			<ul className='grid grid-cols-1 gap-y-10'>
 				{posts.map(post => (
 					<ListItem key={post.id} post={post} />
 				))}

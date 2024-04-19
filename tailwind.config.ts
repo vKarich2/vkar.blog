@@ -9,13 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        'Oswald': ['Oswald', 'sans-serif'],
-        'Quicksand': ['Quicksand', 'sans-serif']
+        Oswald: ['"Oswald"', 'sans-serif'],
+        Quicksand: ['"Quicksand"', 'sans-serif']
       }
     },
   },
   plugins: [
     require('@tailwindcss/typography'),
   ],
+  darkMode: 'class',
 };
+
 export default config;

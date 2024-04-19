@@ -1,9 +1,15 @@
 ---
+image: '/images/exploring.png'
 title: 'Wanderlust Chronicles: Exploring the Unknown'
 date: '2024-04-15'
+category: 'Travels'
+time: '4 min'
+author: {
+	name: 'Vladyslav Karapetov',
+	job: 'Junior Front-end Developer',
+	image: '/images/avatar-1.png',
+}
 ---
-
-![Deep in the Amazon Rainforest](../public/images/photo.png)
 
 Welcome to Wanderlust Chronicles, where we embark on thrilling adventures to uncover the mysteries of the world! In today's post, we're diving deep into the heart of the Amazon Rainforest, where lush greenery and exotic wildlife await.
 
