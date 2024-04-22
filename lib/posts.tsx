@@ -38,7 +38,7 @@ export function getSortedPostsData(){
 
 		return blogPost;
 		
-	}).filter(Boolean);
+	});
 
 	return allPostsData.sort((a, b) => a.date < b.date ? 1 : -1);
 }
