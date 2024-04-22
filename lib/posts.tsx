@@ -3,6 +3,7 @@ import path from 'path';
 import matter from 'gray-matter';
 import { remark } from 'remark';
 import html from 'remark-html';
+import readingDuration from 'reading-duration';
 
 const postsDirectory = path.join(process.cwd(), 'blogposts');
 
@@ -16,13 +17,18 @@ export function getSortedPostsData(){
 
 		const matterResult = matter(fileContents);
 		
+		const readDuration = readingDuration(matterResult.content, {
+		wordsPerMinute: 100,
+		emoji: 'open_book',
+	}).replace(' read', '');
+
 		const blogPost: BlogPost = {
 			id,
 			image: matterResult.data.image,
 			title: matterResult.data.title,
 			date: matterResult.data.date,
 			category: matterResult.data.category,
-			time: matterResult.data.time,
+			readingDuration: readDuration,
 			author: {
 				name: matterResult.data.author.name,
 				job: matterResult.data.author.job,
@@ -32,7 +38,7 @@ export function getSortedPostsData(){
 
 		return blogPost;
 		
-	});
+	}).filter(Boolean);
 
 	return allPostsData.sort((a, b) => a.date < b.date ? 1 : -1);
 }
@@ -49,13 +55,18 @@ export async function getPostData(id: string) {
 
 	const contentHtml = processedContent.toString();
 
+	const readDuration = readingDuration(contentHtml, {
+		wordsPerMinute: 100,
+		emoji: 'open_book',
+	}).replace(' read', '');
+
 	const blogPostWithHTML: BlogPost & { contentHtml: string } = {
 		id,
 		image: matterResult.data.image,
 		title: matterResult.data.title,
 		date: matterResult.data.date,
 		category: matterResult.data.category,
-		time: matterResult.data.time,
+		readingDuration: readDuration,
 		author: {
 				name: matterResult.data.author.name,
 				job: matterResult.data.author.job,

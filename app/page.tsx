@@ -1,5 +1,4 @@
 import Posts from "./components/Posts";
-import Footer from "./components/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -18,13 +17,13 @@ export default function Home() {
         <p>UI/UX Designer</p>
       </div>
       <div className="flex gap-3">
-        <Link className=" opacity-90 hover:opacity-100 transition-opacity duration-300" href={'https://www.github.com/'}><Image src={github} alt="github" width={50} height={50} /></Link>
-        <Link className=" opacity-90 hover:opacity-100 transition-opacity duration-300" href={'https://www.dribbble.com/'}><Image src={dribbble} alt="dribbble" width={50} height={50} /></Link>
-        <Link className=" opacity-90 hover:opacity-100 transition-opacity duration-300" href={'https://www.instagram.com/'}><Image src={instagram} alt="instagram" width={50} height={50} /></Link>
-        <Link className=" opacity-90 hover:opacity-100 transition-opacity duration-300" href={'https://www.linkedin.com/'}><Image src={linkedin} alt="linkedin" width={50} height={50} /></Link>
+        <Link className=" opacity-90 hover:opacity-100 transition-opacity duration-300" href={'https://github.com/vKarich2'}><Image src={github} alt="github" width={50} height={50} /></Link>
+        <Link className=" opacity-90 hover:opacity-100 transition-opacity duration-300" href={'https://dribbble.com/vladyslav_kar'}><Image src={dribbble} alt="dribbble" width={50} height={50} /></Link>
+        <Link className=" opacity-90 hover:opacity-100 transition-opacity duration-300" href={'https://www.instagram.com/vladyslav_kar_dev/'}><Image src={instagram} alt="instagram" width={50} height={50} /></Link>
+        <Link className=" opacity-90 hover:opacity-100 transition-opacity duration-300" href={'https://www.linkedin.com/in/vladyslav-karapetov-63295a243/'}><Image src={linkedin} alt="linkedin" width={50} height={50} /></Link>
       </div>
       <Posts />
-      <Footer />
+      
     </main>
   );
 }

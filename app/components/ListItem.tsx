@@ -8,11 +8,11 @@ type Props = {
 }
 
 export default function ListItem({ post }: Props) {
-	const { id, image, title, date, category, time, author } = post;
+	const { id, image, title, date, category, readingDuration, author } = post;
 	const formattedDate = getFormattedDate(date);
 
 	return (
-		<div className=' flex border rounded-[20px] border-[#696969] w-[820px] h-[260px]'>
+		<div className=' flex border rounded-[20px] border-[#696969] w-[820px] h-[260px] transition-all duration-300'>
 			<Image className=' rounded-l-[19px]' src={image} alt='post-image' width={460} height={260} />
 			<div className=' ml-[30px] flex flex-col justify-between'>
 				<li className='flex flex-col'>
@@ -21,10 +21,7 @@ export default function ListItem({ post }: Props) {
 						<div className='w-[0.5px] h-[20px] rounded-full bg-[#1c1c1c] dark:bg-[#f0f0f0]'></div>
 						<p className='text-[#1c1c1c] dark:text-[#f0f0f0] my-5'>{formattedDate}</p>
 						<div className='w-[0.5px] h-[20px] rounded-full bg-[#1c1c1c] dark:bg-[#f0f0f0]'></div>
-						<div className='flex gap-1'>
-							<p>&#128214;</p>
-							<p className='font'>{time}</p>
-						</div>
+						<p className='flex gap-1'>{readingDuration}</p>
 					</div>
 					<Link className=' max-w-[302px] no-underline text-[#1c1c1c] dark:text-[#f0f0f0] font-Oswald font-semibold text-xl leading-[30px] opacity-90 hover:opacity-100 transition-opacity duration-300' href={`/posts/${id}`}>{title}</Link>
 				</li>

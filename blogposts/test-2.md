@@ -1,9 +1,8 @@
 ---
-image: '/images/test-2.png'
+image: '/images/posts/test-2.png'
 title: 'Lorem Ipsum sit Dolor Amet Lorem: Ipsum Savati at Roadir Kerne 2 Test'
 date: '2024-04-25'
 category: 'Test'
-time: '9 min'
 author: {
 	name: 'Vladyslav Karapetov',
 	job: 'Junior Front-end Developer',
