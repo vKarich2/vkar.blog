@@ -27,6 +27,8 @@ export default function ThemeSwitcher() {
       height={25}
       alt={resolvedTheme === 'dark' ? 'Light Mode' : 'Dark Mode'}
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
+      sizes='60x60' 
+      priority={true}
     />
   );
 }

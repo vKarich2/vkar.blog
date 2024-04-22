@@ -48,7 +48,7 @@ export default async function Post({ params }: { params: {postId: string}}) {
 	return (
 		<main className=' w-full mx-auto transition-all duration-300'>
 			<div className='w-[1320px] flex flex-col items-center'>
-				<Image className='mt-10 rounded-2xl' src={image} alt='Image' width={900} height={500} />
+				<Image className='mt-10 rounded-2xl' src={image} alt='Image' width={900} height={500} sizes='900x500' priority={true} />
 				<h1 className='font-Oswald font-semibold text-3xl text-[#1c1c1c] dark:text-[#f0f0f0] mt-10'>{title}</h1>
 				<div className='flex items-center justify-center gap-4 mt-6 font-Quicksand font-medium text-sm'>
 					<p className='flex justify-center items-center bg-[#696969] dark:bg-[#f0f0f0] dark:text-[#1c1c1c] w-[100px] h-6 bg-[#d6d6d6] rounded-full'>{category}</p>
