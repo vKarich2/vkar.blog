@@ -11,12 +11,3 @@ type BlogPost = {
 		image: string,
 	}
 }
-
-type NewsPost = {
-	image: string,
-	id: string,
-	title: string,
-	date: string,
-	category: string,
-	readingDuration: string
-}

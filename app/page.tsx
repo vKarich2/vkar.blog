@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className=" ml-11 mt-16 font-Oswald text-[40px] font-semibold leading-[45px]">
       <p className="mb-5">Hello and Welcome!&#128075;<br/>I&apos;m Vladyslav Karapetov.</p>
-      <div className=" mb-5 flex font-Quicksand font-normal text-xl gap-4 text-[#696969]">
+      <div className=" mb-5 flex font-Quicksand font-normal text-xl gap-4 text-[#696969] dark:text-[#9c9c9c]">
         <p>Front-end Developer</p>
         <div className=" w-[1px] bg-[#696969] rounded-full"></div>
         <p>UI/UX Designer</p>
