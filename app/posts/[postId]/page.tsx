@@ -64,10 +64,10 @@ export default async function Post({ params }: { params: {postId: string}}) {
 			</div>
 			<div className='flex flex-col max-w-[900px] ml-[210px]'>
 				<div className='flex'>
-					<Image className='max-w-[60px] h-[60px] rounded-full' src={author.image} alt='Author' width={60} height={60} sizes='60x60' priority={false} />
+					<Image className='rounded-full' src={author.image} alt='Author' width={75} height={75} sizes='75x75' priority={false} />
 					<div className='flex flex-col justify-center ml-5 text-[#696969] dark:text-[#9c9c9c]'>
-						<p className='font-Oswald font-semibold text-md text-[#1c1c1c] dark:text-[#f0f0f0]'>{author.name}</p>
-						<p className='font-Quicksand font-normal text-sm'>{author.job}</p>
+						<p className='font-Oswald font-semibold text-lg text-[#1c1c1c] dark:text-[#f0f0f0]'>{author.name}</p>
+						<p className='font-Quicksand font-normal text-md'>{author.job}</p>
 					</div>
 				</div>
 				<Link className='text-[#1c1c1c] dark:text-[#f0f0f0] font-Oswald font-semibold text-lg opacity-90 hover:opacity-100 transition-opacity duration-300 dark:text-[#f0f0f0] no-underline my-10' href='/'> &#128072; Back to home</Link>
